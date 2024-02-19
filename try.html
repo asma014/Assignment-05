@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRYYYY</title>
+
+    <!-- Daisy UI & Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+<body>
+    <header class="w-[1715px] mx-auto">
+       <nav class="">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+              
+              </div>
+              <a class="btn btn-ghost text-3xl font-extrabold">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-xl">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-outline btn-accent forced-colors:hidden h-6 w-[130px] rounded-lg bg-cyan-100 text-xl">Bus <img src="images/bus-icon.png" alt=""></button>
+                
+            </div>
+          </div>
+       </nav>
+    </header>
+
+    <main>
+        <div>
+            <div id="home-screen" class="hero w-[1700px] h-[850px] mx-auto rounded-[48px]" style="background-image: url(images/banner.png);">
+                <!-- <div class="hero-overlay"></div> -->
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-5xl">
+                    <h1 class="mb-14 text-7xl font-bold text-white">End-to-End Travel with <br> <span class="text-green-500">P Paribahan</span></h1>
+                    <p class="mb-14 text-white text-xl p-4">Expand your travel horizons with new facets! Diversify your journey to explore local destinations <br> with P Paribahan. Take the bus and be on your way.</p>
+
+
+                    <button onclick="clickFunction(event)" id="btn" class="text-3xl bg-green-400" >Button</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- Best Offers -->
+        <div class="m-44 text-center">
+            <h2 class="text-4xl font-bold mb-10">Best offers for you</h2>
+         <div class="flex justify-center gap-5">
+
+            <!-- 15%off -->
+            <div class="flex">
+                <div class="bg-orange-300 rounded-3xl w-[450px] h-[250px] p-8"> <h3 class="text-4xl font-extrabold">15% OFF</h3>
+                    <p class="text-xl font-semibold">on your next purchase</p>
+                    <p >use by January 2024</p>
+                </div>
+
+                    <div class="bg-orange-300 rounded-3xl w-[300px] h-[250px] p-12"> <h3 class="text-2xl font-extrabold mt-4">NEW15</h3>
+                        <p class="font-semibold">Coupon Code</p>
+                        
+                    </div>
+            </div>
+
+
+
+            <!-- 20%off -->
+            <div class="flex">
+                <div class="bg-rose-300 rounded-3xl w-[450px] h-[250px] p-8"> <h3 class="text-4xl font-extrabold">20% OFF</h3> 
+                    <p class="text-xl font-semibold">on your next purchase</p>
+                    <p >use by January 2024</p>
+                </div>
+
+                    <div class="bg-rose-300 rounded-3xl w-[300px] h-[250px] p-12"> <h3 class="text-2xl font-extrabold mt-4">Couple 20</h3> 
+                        <p class="font-semibold">Coupon Code</p>
+                        
+                    </div>
+            </div>
+
+         </div>
+         <button class="btn btn-outline btn-success mt-20 p-4 w-44 h-16 text-xl">See All Offers</button>
+        </div>
+
+        <!-- P H paribahan -->
+        <div id="ticket-counter" class="mr-36 ml-36 mt-36 text-center border-2 solid rounded-tl-3xl rounded-tr-3xl border-green-400">
+            <h2 class="text-4xl font-bold mb-10">P.H Paribahan</h2>
+            <p class="mb-16">Effortlessly find cheap flight and air tickets to various destinations on ShareTrip. Explore routes, book online air tickets, and plan your next travel adventure.</p>
+
+            
+            <div class="flex p-10 gap-9 mb-5">  <!-- green line & 550taka whole -->
+
+                <div class="w-[1208px] shadow-xl rounded-3xl">  
+                    <!-- greenLine Paribahan -->
+                    <div class="flex place-content-between mb-8">
+                        <div><img class="pl-8" src="images/bus-logo.png" alt=""></div>
+                        <div>
+                            <h3 class="text-3xl font-bold">Greenline Paribahan</h3>
+                            <p class="text-xl">Coach-009-WEB | AC_Business</p>
+                        </div>
+
+                        <div class="navbar-end">
+                            <button class="btn btn-accent h-16 w-56 bg-green-100 text-xl"><img src="images/seat-green.png" alt=""> 40 Seats Left</button>
+                        </div>
+                    </div>
+    
+                   <div class="rounded-xl bg-gray-100 pb-8">
+
+                     <!-- route-dhaka sylhet -->
+                     <div class="w-full grid grid-cols-2  place-content-center h-16">
+                        <div><p class=" text-2xl">Route</p></div>
+                        <div><p class="text-2xl">Dhaka-Sylhet</p></div>
+                    </div>
+    
+                    <!-- departure time -->
+                    <div class="w-full grid grid-cols-2  place-content-center h-16">
+                        <div><p class="place-content-start text-2xl">Departure Time</p></div>
+                        <div><p class="text-2xl">9.00 PM</p></div>
+                    </div>
+    
+                    <!-- boarding point -->
+                    <div class="grid grid-cols-3 gap-9 px-2">
+                        <button class="btn bg-gray-200 font-bold text-xl h-16">Boarding Point-Laxmipur</button>
+                        <button class="btn bg-gray-200 font-bold text-xl h-16">Dropping Point-Bogura</button>
+                        <button class="btn bg-gray-200 font-bold text-xl h-16">Est. Time-11 Hour</button>
+                    </div>
+                   </div>
+                </div>
+                
+
+                <!-- 550 Taka -->
+                <div class="w-96 shadow-lg rounded-3xl">
+                    <div class="place-content-center">
+                        <img src="images/fare.png" alt="">
+                    </div>
+                    <h2 class="text-4xl font-bold mb-10">550 Taka</h2>
+                    <p class="text-xl font-semibold">Per Seat</p>
+                </div>
+                
+
+            </div>
+            
+            <!-- Seat detail container -->
+            <div class="flex w-full gap-10 p-10 mb-5">
+                <!-- seat bonton -->
+                <div class="w-[950px] shadow-2xl rounded-xl"> 
+                    <div><h3 class="text-2xl font-bold my-10 text-left px-10">Select Your Seat</h3></div>
+                        <!-- available & selected -->
+                        <div class="flex justify-between mb-10 px-10">
+                            <div class="flex">
+                                <img src="images/seat-gray.png" alt="">
+                                <p class="text-xl">Available</p>
+                            </div>
+                            <div class="flex">
+                                <img src="images/seat-green-filled.png" alt="">
+                                <p class="text-xl">Selected</p>
+                            </div>
+                        </div>
+                        <!-- <div class="my-10">
+                            <img class="w-10" src="images/steering.png" alt="">
+                        </div> -->
+                        <div class="grid grid-cols-3 gap-6 place-content-around mb-10">
+                            <div><p>A</p></div>
+                            <div class="grid grid-cols-2">
+                                <button class="btn w-24">A1</button>
+                                <button class="btn w-24">A2</button>
+                            </div>
+                            <div class="grid grid-cols-2">
+                                <button class="btn w-24">A3</button>
+                                <button class="btn w-24">A4</button>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-6 place-content-around mb-10">
+                            <div><p>B</p></div>
+                            <div class="grid grid-cols-2">
+                                <button class="btn w-24">B1</button>
+                                <button class="btn w-24">B2</button>
+                            </div>
+                            <div class="grid grid-cols-2">
+                                <button class="btn w-24">B3</button>
+                                <button class="btn w-24">B4</button>
+                            </div>
+                        </div>
+
+                </div>
+<!-- ---------- -->
+
+                <!-- calculation -->
+                <div class="shadow-2xl w-[550px] rounded-xl">
+                    <div><h3 class="text-2xl font-bold text-left my-10 px-10">Select Your Seat</h3></div>
+
+                    <div class="bg-gray-100 rounded-xl mx-3 pb-3">
+                        <div class="grid grid-cols-3 mb-6">
+                            <div><p class="text-xl font-bold">Seat</p></div>
+                            <div><p class="text-xl font-bold">Class</p></div>
+                            <div><p class="text-xl font-bold">Price</p></div>
+                        </div>
+    
+                        <div class="grid grid-cols-3 mb-6">
+                            <div><p>C2</p></div>
+                            <div><p>Economy</p></div>
+                            <div><p>550</p></div>
+                        </div>
+    
+                        <div class="grid grid-cols-3 mb-6">
+                            <div><p>C2</p></div>
+                            <div><p>Economy</p></div>
+                            <div><p>550</p></div>
+                        </div>
+    
+                        <div class="grid grid-cols-2 mb-6">
+                            <div><p class="text-xl font-bold">Total Price</p></div>
+                            <div><p class="text-xl font-bold">BDT <span></span> </p></div>
+                        </div>
+    
+                        <div class="mb-6">
+                            <div class="join w-full justify-center">
+                                <input class="input input-bordered w-72 join-item" placeholder="Have any coupon?"/>
+                                <button class="btn join-item rounded-r-full bg-green-500 w-28 text-white text-[18px]">Apply</button>
+                              </div>
+                        </div>
+    
+                        <div class="grid grid-cols-2 mb-6">
+                            <div><p class="text-xl font-bold">Grand Total</p></div>
+                            <div><p class="text-xl font-bold">BDT <span></span> </p></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="my-10 px-10">
+                        <label class="form-control w-full">
+                            <div class="label">
+                              <span class="label-text text-xl font-bold">Passenger Name*</span>
+                            </div>
+                            <input type="text" placeholder="Enter your name" class="input input-bordered w-full" />
+                          </label>
+                    </div>
+
+                    <div class="my-10 px-10">
+                        <label class="form-control w-full">
+                            <div class="label">
+                              <span class="label-text text-xl font-bold">Phone Number*</span>
+                            </div>
+                            <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full" />
+                          </label>
+                    </div>
+
+                    <div class="my-10 px-10">
+                        <label class="form-control w-full">
+                            <div class="label">
+                              <span class="label-text text-xl font-bold">Email ID*</span>
+                            </div>
+                            <input type="text" placeholder="Enter your email id" class="input input-bordered w-full" />
+                          </label>
+                    </div>
+
+                    <div><button class="btn btn-wide w-3/4 text-xl bg-green-400 text-white h-14 mb-10">Next</button></div>
+
+                    <div class="grid grid-cols-2 mb-10">
+                        <div><a class="link">Terms & Conditions</a></div>
+                        <div><a class="link">Cancellation Policy</a></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <script src="scripts/try.js"></script>
+</body>
+</html>
