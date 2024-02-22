@@ -14,7 +14,7 @@
 
 </head>
 <body>
-    <header class="w-[1715px] mx-auto">
+    <header class="w-full mx-auto">
         <!-- NAVBAR section -->
        <nav class="">
         <div class="navbar bg-base-100">
@@ -45,7 +45,7 @@
 
     <main>
         <div>
-            <div id="home-screen" class="hero w-[1700px] h-[850px] mx-auto rounded-[48px]" style="background-image: url(images/banner.png);">
+            <div id="home-screen" class="hero w-[85rem] h-[850px] mx-auto rounded-[48px]" style="background-image: url(images/banner.png);">
                 <!-- <div class="hero-overlay"></div> -->
                 <div class="hero-content text-center text-neutral-content">
                   <div class="max-w-5xl">
@@ -60,18 +60,18 @@
         </div>
 
         <!-- Best Offers -->
-        <div class="m-44 text-center">
+        <div class="m-44 w-[85rem] mx-auto text-center">
             <h2 class="text-4xl font-bold mb-10">Best offers for you</h2>
-         <div class="flex justify-center gap-5">
+         <div class="flex justify-center w-[85rem]">
 
             <!-- 15%off -->
             <div class="flex">
-                <div class="bg-orange-300 rounded-3xl w-[450px] h-[250px] p-8"> <h3 class="text-4xl font-extrabold">15% OFF</h3>
+                <div class="bg-orange-200 rounded-3xl w-[350px] h-[200px] p-8"> <h3 class="text-4xl font-extrabold">15% OFF</h3>
                     <p class="text-xl font-semibold">on your next purchase</p>
                     <p >use by January 2024</p>
                 </div>
 
-                    <div class="bg-orange-300 rounded-3xl w-[300px] h-[250px] p-12"> <h3 class="text-2xl font-extrabold mt-4">NEW15</h3>
+                    <div class="bg-orange-200 rounded-3xl w-[250px] h-[200px] p-12"> <h3 class="text-2xl font-extrabold mt-4">NEW15</h3>
                         <p class="font-semibold">Coupon Code</p>
                         
                     </div>
@@ -81,12 +81,12 @@
 
             <!-- 20%off -->
             <div class="flex">
-                <div class="bg-rose-300 rounded-3xl w-[450px] h-[250px] p-8"> <h3 class="text-4xl font-extrabold">20% OFF</h3> 
+                <div class="bg-rose-200 rounded-3xl w-[350px] h-[200px] p-8"> <h3 class="text-4xl font-extrabold">20% OFF</h3> 
                     <p class="text-xl font-semibold">on your next purchase</p>
                     <p >use by January 2024</p>
                 </div>
 
-                    <div class="bg-rose-300 rounded-3xl w-[300px] h-[250px] p-12"> <h3 class="text-2xl font-extrabold mt-4">Couple 20</h3> 
+                    <div class="bg-rose-200 rounded-3xl w-[250px] h-[200px] p-12"> <h3 class="text-2xl font-extrabold mt-4">Couple 20</h3> 
                         <p class="font-semibold">Coupon Code</p>
                         
                     </div>
@@ -114,7 +114,7 @@
                         </div>
 
                         <div class="navbar-end">
-                            <button class="btn btn-accent h-16 w-56 bg-green-100 text-xl"><img src="images/seat-green.png" alt=""> <span>8</span> Seats Left</button>
+                            <button class="btn btn-accent h-16 w-56 bg-green-100 text-xl"><img src="images/seat-green.png" alt=""> <span id="seat-left">8</span> Seats Left</button>
                         </div>
                     </div>
     
@@ -147,7 +147,7 @@
                     <div class="place-content-center">
                         <img src="images/fare.png" alt="">
                     </div>
-                    <h2 class="text-4xl font-bold mb-10">550 Taka</h2>
+                    <h2 class="text-4xl font-bold mb-10"><span id="550">550</span> Taka</h2>
                     <p class="text-xl font-semibold">Per Seat</p>
                 </div>
                 
@@ -165,6 +165,9 @@
                                 <img src="images/seat-gray.png" alt="">
                                 <p class="text-xl">Available</p>
                             </div>
+                            <div>
+                                <p class="hidden">budget <span id="budget" class="hidden" >2200</span> </p>
+                            </div>
                             <div class="flex">
                                 <img src="images/seat-green-filled.png" alt="">
                                 <p class="text-xl">Selected</p>
@@ -176,24 +179,24 @@
                         <div class="grid grid-cols-3 gap-6 place-content-around mb-10">
                             <div><p>A</p></div>
                             <div class="grid grid-cols-2">
-                                <button class="btn w-24">A1</button>
-                                <button class="btn w-24">A2</button>
+                                <button id="clickButton" class="btn w-24">A1</button>
+                                <button id="clickButton" class="btn w-24">A2</button>
                             </div>
                             <div class="grid grid-cols-2">
-                                <button class="btn w-24">A3</button>
-                                <button class="btn w-24">A4</button>
+                                <button id="clickButton" class="btn w-24">A3</button>
+                                <button id="clickButton" class="btn w-24">A4</button>
                             </div>
                         </div>
 
                         <div class="grid grid-cols-3 gap-6 place-content-around mb-10">
                             <div><p>B</p></div>
                             <div class="grid grid-cols-2">
-                                <button onclick="handleSelect()" class="btn w-24">B1</button>
-                                <button class="btn w-24">B2</button>
+                                <button id="clickButton" class="btn w-24">B1</button>
+                                <button id="clickButton" class="btn w-24">B2</button>
                             </div>
                             <div class="grid grid-cols-2">
-                                <button class="btn w-24">B3</button>
-                                <button class="btn w-24">B4</button>
+                                <button id="clickButton" class="btn w-24">B3</button>
+                                <button id="clickButton" class="btn w-24">B4</button>
                             </div>
                         </div>
 
@@ -206,38 +209,35 @@
 
                     <div class="bg-gray-100 rounded-xl mx-3 pb-3">
                         <div class="grid grid-cols-3 mb-6">
-                            <div><p class="text-xl font-bold">Seat</p></div>
+                            <div><p class="text-xl font-bold">Seat <span id="seat-count" class="bg-green-400 w-20 px-2 rounded-lg">0</span> </p> </div>
                             <div><p class="text-xl font-bold">Class</p></div>
                             <div><p class="text-xl font-bold">Price</p></div>
                         </div>
+    <!-- ----------------------------------------------------------------------- -->
+                       <div class="border-b-4 to-black">
+                        <ul id="seat-class-price-container">
+
+                        </ul>
+                      
+                       </div>
+    <!-- ---------------------------------------------------------------------- -->
+                        
     
-                        <div class="grid grid-cols-3 mb-6">
-                            <div><p>C2</p></div>
-                            <div><p>Economy</p></div>
-                            <div> <span>550</span> </div>
-                        </div>
-    
-                        <div class="grid grid-cols-3 mb-6">
-                            <div><p>C2</p></div>
-                            <div><p>Economy</p></div>
-                            <div> <span>550</span> ></div>
-                        </div>
-    
-                        <div class="grid grid-cols-2 mb-6">
+                        <div class="grid grid-cols-2 mb-6  place-content-between">
                             <div><p class="text-xl font-bold">Total Price</p></div>
-                            <div><p class="text-xl font-bold">BDT <span></span> </p></div>
+                            <div><p class="text-xl font-bold">BDT <span id="total-cost">0</span> </p></div>
                         </div>
     
                         <div class="mb-6">
                             <div class="join w-full justify-center">
-                                <input class="input input-bordered w-72 join-item" placeholder="Have any coupon?"/>
-                                <button class="btn join-item rounded-r-full bg-green-500 w-28 text-white text-[18px]">Apply</button>
+                                <input id="coupon-code" class="input input-bordered w-72 join-item" placeholder="Have any coupon?"/>
+                                <button onclick="updateGrandTotal('apply-btn')" class="btn join-item rounded-r-full bg-green-500 w-28 text-white text-[18px]">Apply</button>
                               </div>
                         </div>
     
                         <div class="grid grid-cols-2 mb-6">
                             <div><p class="text-xl font-bold">Grand Total</p></div>
-                            <div><p class="text-xl font-bold">BDT <span></span> </p></div>
+                            <div><p class="text-xl font-bold">BDT <span id="grand-total">0</span> </p></div>
                         </div>
                     </div>
 
@@ -277,7 +277,20 @@
                         <div><a class="link">Cancellation Policy</a></div>
                     </div>
 
+<div class="hidden">
+    <!-- The button to open modal -->
+<label for="my_modal_7" class="btn">open modal</label>
 
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="my_modal_7" class="modal-toggle" />
+<div class="modal" role="dialog">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">This modal works with a hidden checkbox!</p>
+  </div>
+  <label class="modal-backdrop" for="my_modal_7">Close</label>
+</div>
+</div>
                 </div>
             </div>
 
